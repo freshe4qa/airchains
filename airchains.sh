@@ -63,8 +63,8 @@ chmod +x junctiond
 mv junctiond $HOME/go/bin/
 
 # config
-junctiond config chain-id $AIRCHAINS_CHAIN_ID
-junctiond config keyring-backend test
+junctiond config set client chain-id junction
+junctiond config set client keyring-backend test
 
 # init
 junctiond init $NODENAME --chain-id $AIRCHAINS_CHAIN_ID
